@@ -29,7 +29,7 @@ header ul{
 }
 .FR{
     background: rgb(148, 143, 143);
-    border-radius: 10px;
+    border-radius: 20px; 
 }
 main{
     background: url(./img/bg.jpg) center/cover;
@@ -103,6 +103,7 @@ h2{
     margin: 0px;
     font-size: 0.8rem;
 }
+/****************************** Media ***************************/
 .section-2{
     color: rgb(3, 3, 3);
     margin: 80px 200px 60px 0;
@@ -131,7 +132,7 @@ h2{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin: 90px 120px;
+    margin:  90px 8%;
 }
 .section-3 p{
         display: flex;
@@ -236,7 +237,26 @@ footer{
     margin: 10px 80px;
 }
 
-
+/************************ RESPONSIVE **********************/
+@media (max-width: 1250px){
+.footer-2{
+    display: block;
+}
+}
+@media (max-width: 1120px ){
+    .footer-1{
+        display: block;
+    }
+    .logo-footer{
+        display: block;
+    }
+}
+@media ( max-width: 1050px){
+    .section-3{
+        display: block;
+        align-items: center;
+    }
+}
 
 
 
