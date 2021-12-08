@@ -52,6 +52,7 @@ h2{
     padding: 15px;
     margin-top: 35px;
     font-size: 0.8rem;
+    text-transform: uppercase;
 }
 .P1{
     text-align: center;
@@ -70,7 +71,9 @@ h2{
     text-align: center;
 }
 .main-1 p{
-    margin: 15px;
+    margin: 15px 30px;
+    font-size: 0.9rem;
+    text-align: center;
 }
 
 .btn-left{ 
@@ -143,17 +146,17 @@ h2{
    
 }
 .Main-news img{
-    width: 100%;
-    border-radius: 3px;
-    box-shadow: 0 2px 10px #888;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(136, 136, 136);
 }
 .Main-news h3{
     font-size: 1rem;
     margin: 15px auto;
 }
 .Main-news  p{
+    width: 100%;
     line-height: 15px;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     letter-spacing: 0;
 }
 .link a{ 
@@ -253,7 +256,74 @@ footer{
 
 /************************ RESPONSIVE **********************/
 
+@media (max-width: 1320px){
+.footer-presse{
+    flex-wrap: wrap;
+}
+.footer-officiels{
+    flex-wrap: wrap;
+}
+}
+@media (max-width: 1220px){
+.Main-news{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+}
+@media (max-width: 1000px){
+header ul{
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+}
+@media (max-width: 800px){
+.main-1{
+    flex-direction: column;
+}    
+.main-1 h3{
+    margin: 20px auto;
+}
+.main-1 p{
+    margin: 20px 100px;
+}
+.section-2{
+        flex-direction: column;
+        padding: 20px auto;
+        text-align: center;
+        align-items: center;
+    }
+}
+@media (max-width: 690px){
+header ul{
+    font-size: 1rem;
+    flex-wrap: wrap;
+}
+}
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************** RESPONSIVE MOBILE **************/
 @media (max-width: 600px){
     header{
         display: none;
@@ -263,10 +333,14 @@ footer{
         line-height: 25px;
     }
     main img{
-        width: 50%;
+        width: 60%;
     }
     main h2{
         text-align: center;
+        margin: 15px 20px;
+    }
+    .main-section h3{
+        margin: 20px auto;
     }
     .main-1{
         display: block;
@@ -275,19 +349,28 @@ footer{
     .section-2{
         flex-direction: column;
     }
+    .main-left h4{
+        text-align: center;
+    }
+    .main-left h5{
+    font-size: 0.9rem;
+    font-weight: normal;
+    }
+    
     .btn-right2{
-        margin: 0;
-        justify-content: center;
+        margin: 15px auto;
+     align-items: center;
     }
     .Main-news{
-        flex-direction: column;
+        display: block;
         margin: 40px 0px 0px 0px;
-        position: relative;
-        align-items: center;
+    }
+    .Main-news p{
+        margin: 10px auto;
     }
     .Main-news img{
-        width: 200%;
         align-items: center;
+        margin: 10px auto;
     }
     .Main-news a{
         position: relative;
