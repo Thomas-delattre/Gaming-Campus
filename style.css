@@ -60,22 +60,19 @@ h2{
     margin: 40px auto;
 }
 .main-section{
-    display: flex;
     background: rgb(15, 15, 15);
     color: white;
-    padding: 100px 100px 100px 100px;
+    padding: 100px 0; 
+}
+.main-1{
+    display: flex;
     justify-content: space-around;
     text-align: center;
 }
-.P2{
-    margin: 15px 15px 15px 15px;
+.main-1 p{
+    margin: 15px;
 }
-.P3{
-    margin: 15px 15px 15px 15px;
-}
-.P4{
-    margin: 15px 15px 15px 15px;
-}
+
 .btn-left{ 
     letter-spacing: 2px;
     background: none;
@@ -187,6 +184,7 @@ footer{
     padding: 20px 0;
     font-size: 0.8rem;
     line-height: 30px;
+    color: #3745c0;
 }
 .parents p{
     padding: 20px 0;
@@ -256,7 +254,7 @@ footer{
 /************************ RESPONSIVE **********************/
 
 
-@media (max-width: 600px ){
+@media (max-width: 600px){
     header{
         display: none;
     }
@@ -265,19 +263,17 @@ footer{
         line-height: 25px;
     }
     main img{
-        
+        width: 50%;
     }
-
+    main h2{
+        text-align: center;
     }
-    .main-section{
-        justify-content: space-between;
+    .main-1{
+        display: block;
+        justify-content: space-around;
     }
     .section-2{
         flex-direction: column;
-    }
-    .News{ 
-        text-align: center;
-        margin: 40px 0px 0px 0px;
     }
     .btn-right2{
         margin: 0;
@@ -285,11 +281,16 @@ footer{
     }
     .Main-news{
         flex-direction: column;
-        text-align: center;
+        margin: 40px 0px 0px 0px;
+        position: relative;
+        align-items: center;
     }
     .Main-news img{
         width: 200%;
-        
+        align-items: center;
+    }
+    .Main-news a{
+        position: relative;
     }
     .footer-1{
         display: none;
@@ -302,11 +303,22 @@ footer{
     }
     .main-section{
         flex-direction: column;
-        }
     }
-        .footer-2{
-            display: block;
-        }
+    footer-3{
+        padding: 20px;
+    }
+    #titre-footer {
+        margin: 0 auto;
+    }
+    .footer-officiels{
+        margin: 10px auto;
+    }
+    .footer-officiels img{
+        height: 10px;
+        width: 50px;
+        padding: 0px 10px;
+        align-items: center;
+    }
     
 }
 
