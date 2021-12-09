@@ -26,6 +26,10 @@ header ul{
     display: flex;
     justify-content: space-around;
 }
+header a{
+    text-decoration: none;
+    color: black;
+}
 .FR{
     background: rgb(148, 143, 143);
     border-radius: 20px; 
@@ -45,14 +49,17 @@ h2{
     color: white;
 }
 .button-main{
+    margin: 30px auto;
+}
+.button-main a{
     letter-spacing: 2px;
     background: none;
     color: rgb(247, 238, 238);
     border: 1px solid rgb(250, 246, 246);
     padding: 15px;
-    margin-top: 35px;
     font-size: 0.8rem;
     text-transform: uppercase;
+    text-decoration: none;
 }
 .P1{
     text-align: center;
@@ -75,8 +82,10 @@ h2{
     font-size: 0.9rem;
     text-align: center;
 }
-
-.btn-left{ 
+.main-section a{
+    text-decoration: none;
+}
+.btn-left a{ 
     letter-spacing: 2px;
     background: none;
     color: rgb(255, 255, 255);
@@ -85,7 +94,7 @@ h2{
     margin: 0px;
     font-size: 0.8rem;
 }
-.btn-middle{
+.btn-middle a{
     letter-spacing: 2px;
     background: none;
     color: rgb(247, 238, 238);
@@ -94,7 +103,7 @@ h2{
     margin: 0px;
     font-size: 0.8rem;
 }
-.btn-right{
+.btn-right a{
     letter-spacing: 2px;
     background: none;
     color: rgb(247, 238, 238);
@@ -116,14 +125,16 @@ h2{
     letter-spacing: 5px;
     
 }
-.btn-right2 {
+.btn-right2 a{
     display: flex; 
     border: 1px solid rgb(0, 0, 0);
+    color: black;
     background: none;
     padding: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: bold;
+    text-decoration: none;
 }
  /****************************** 3 photos ***************************/
 
@@ -137,7 +148,6 @@ h2{
     justify-content: space-around;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 40px 10px;
     position: relative;
 }
 .Main-news > div{
@@ -166,6 +176,7 @@ h2{
     position: absolute;
     letter-spacing: none;
     font-weight: bold;
+    text-decoration: none;
 }
 
     /******************************* footer *****************************/
@@ -192,11 +203,15 @@ footer{
 .parents p{
     padding: 20px 0;
 }
-.parents button{
+.link-parents a{
     background: white;
     border: none;
     color: #CD3BD3;
     font-size: 0.7rem;
+    text-decoration: none;
+}
+.link-footer a{
+    text-decoration: none;
 }
 #contact-h4{
     text-transform: uppercase;
@@ -230,6 +245,7 @@ footer{
     margin-left: 150px;
     line-height: 30px;
     width: 30%;
+    padding-right: 20px;
 }
 .footer-presse{
     display: flex;
@@ -251,7 +267,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 80px;
+    margin: 10px auto;
 }
 
 /************************ RESPONSIVE **********************/
@@ -264,19 +280,39 @@ footer{
     flex-wrap: wrap;
 }
 }
-@media (max-width: 1220px){
+@media (max-width: 1100px){
 .Main-news{
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
-    width: 100%;
+    margin: 10px auto;
+}
+.Main-news div{
+    width: 80%;
+    margin: 10px auto;
+}
+.Main-news a{
+    position: relative;
 }
 }
 @media (max-width: 1000px){
 header ul{
     font-size: 0.8rem;
     flex-wrap: wrap;
+}
+}
+@media (max-width: 850px){
+    .footer-bas{
+        margin: 0;
+        padding-right: 10px;
+    }
+}
+@media (max-width: 800px){
+    .footer-1{
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
 }
 @media (max-width: 800px){
 .main-1{
@@ -288,6 +324,9 @@ header ul{
 .main-1 p{
     margin: 20px 100px;
 }
+.main-1 div{
+    margin: 20px auto;
+}
 .section-2{
         flex-direction: column;
         padding: 20px auto;
@@ -297,29 +336,10 @@ header ul{
 }
 @media (max-width: 690px){
 header ul{
-    font-size: 1rem;
+    font-size: 0.8rem;
     flex-wrap: wrap;
 }
 }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -339,36 +359,45 @@ header ul{
         text-align: center;
         margin: 15px 20px;
     }
+    .section-2{
+        flex-direction: column;
+    }
     .main-section h3{
         margin: 20px auto;
     }
     .main-1{
         display: block;
         justify-content: space-around;
+        margin:  20px;
     }
-    .section-2{
-        flex-direction: column;
+    .main-1 div{
+        margin: 20px auto;
     }
-    .main-left h4{
-        text-align: center;
-    }
+    
     .main-left h5{
     font-size: 0.9rem;
     font-weight: normal;
+    text-align: left;
     }
     
-    .btn-right2{
+    .btn-right2 a{
         margin: 15px auto;
      align-items: center;
+     font-size: 0.8rem;
     }
     .Main-news{
         display: block;
-        margin: 40px 0px 0px 0px;
+    }
+    .Main-news  div{
+        width: 80%;
+        text-align: center;
+        align-items: center;
     }
     .Main-news p{
-        margin: 10px auto;
+        text-align: left;
+        display: block;
     }
-    .Main-news img{
+    .Main-news > img{
         align-items: center;
         margin: 10px auto;
     }
@@ -381,28 +410,21 @@ header ul{
     .footer-2{
         display: none;
     }
-    .logo-footer{
-        flex-direction: column;
-    }
     .main-section{
         flex-direction: column;
     }
     footer-3{
-        padding: 20px;
+        padding: 15px auto;
+        margin: 0 auto;
+        width: 600px;
     }
     #titre-footer {
         margin: 0 auto;
     }
     .footer-officiels{
-        margin: 10px auto;
+        margin: 0 auto;
+        flex-wrap: nowrap;
     }
-    .footer-officiels img{
-        height: 10px;
-        width: 50px;
-        padding: 0px 10px;
-        align-items: center;
-    }
-    
 }
 
 
